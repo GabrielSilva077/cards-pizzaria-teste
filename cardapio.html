@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardapio</title>
+    <link rel="stylesheet" href="cardapio.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+    <div class="pai">
+
+        <header class="header-pai-geral">
+
+            <div class="header" id="header">
+
+
+                <div class="logo-header">
+
+                    <img src="imagens/logo.jpg" alt="Logo" id="logo-pizzaria">
+
+                </div>
+
+                <div class="navigation-header" id="navigation-header">
+
+                    <a href="home.html" class="home">Home</a>
+                    <a href="cardapio.html" class="cardapio">Cardápio</a>
+                    <a href="home.html#sobre-nos" class="sobre-nos">Sobre nós</a>
+                    <a href="contatos.html" class="contatos">Contatos</a>
+
+                </div>
+
+            </div>
+
+            <div class="side-bar-pai">
+
+                <input type="checkbox" id="check">
+                <label class="button bars" for="check"><i class="fas fa-bars"></i></label>
+                <div class="side_bar">
+                    <div class="title">
+                        <div class="logo">Villaz Pizzaria</div>
+                        <label class=" button cancel" for="check"><i class="fas fa-times"></i></label>
+                    </div>
+
+                    <div class="navigation-header-side-bar">
+                        <ul>
+                            <li><a href="home.html"><i class="fas fa-qrcode"></i>Home</a></li>
+                            <li><a href="cardapio.html"><i class="fas fa-link"></i>Cardápio</a></li>
+                            <li><a href="home.html#sobre-nos"><i class="fas fa-stream"></i>Sobre nós</a></li>
+                            <li><a href="#"><i class="fas fa-calendar-week"></i>Contatos</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="media_icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <div class="estrutura">
+
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/calabresa.png" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">Calabresa
+                        <span>É especialmente preparada com recheio generoso de linguiça
+                            calabresa de primeira qualidade, queijo muçarela e orégano.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado1">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado1')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado1')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado1')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/portuguesa.png" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">Portuguesa
+                        <span>
+                            Preparada com a deliciosa combinação de ingredientes, a Pizza Portuguesa é sucesso em
+                            qualquer mesa.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado2">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado2')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado2')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado2')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/mussarela.png" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">mussarela
+                        <span>A Mussarela é coberta com molho de tomate, mussarela, azeitonas
+                            e orégano, oferece mais sabor à sua mesa.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado3">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado3')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado3')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado3')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/pepperoni.jpg" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">Pepperoni
+                        <span> Ela é feito com carne bovina, de porco, gordura e temperado com pepperoncino.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado4">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado4')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado4')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado4')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/margherita.png" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">Margherita
+                        <span>A massa de pizza coberta com: tomate, queijo e manjericão, a pizza ganha o coração de
+                            Todos que a consomem.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado5">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado5')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado5')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado5')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/4-queijos.png" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">4 Queijos
+                        <span>A pizza de quatro queijos é um clássico que atrai amantes de queijo e oferece uma explosão
+                            de sabores.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado6">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado6')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado6')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado6')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/chocolate.jpg" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">Cocolate com Morango
+                        <span>A pizza de chocolate com morango oferece um rico sabor do chocolate com a doçura dos
+                            morangos.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado6">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado6')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado6')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado6')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/chocolate-mm.jpg" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">Chocolate com M&M
+                        <span>
+                            A pizza de chocolate com M&M's é uma combinação irresistível para os
+                            amantes de chocolates.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado6">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado6')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado6')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado6')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            <div class="card">
+
+                <div class="imgBx">
+                    <img src="imagens/romeu-julieta.png" alt="" class="imagem">
+                </div>
+                <div class="details">
+                    <p class="principal">Romeu e Julieta
+                        <span>Romeu e Julieta é uma opção deliciosa que certamente atrai os
+                            amantes de queijo e goiabada.
+                        </span>
+                    </p>
+
+                    <h2 class="font">Preço</h2>
+
+                    <p id="resultado6">escolha um tamanho</p>
+
+
+                    <div class="tamanho">
+
+                        <p>Tamanhos</p>
+
+                        <ul class="size">
+                            <li onclick="alterarValor(45, 'resultado6')"> G </li>
+                            <li onclick="alterarValor(35, 'resultado6')"> M </li>
+                            <li onclick="alterarValor(25, 'resultado6')"> P </li>
+                        </ul>
+
+                    </div>
+                    <button class="buttons">Add ao Carrinho</button>
+                </div>
+
+
+            </div>
+            
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+            </script>
+
+
+        <div id="btnTop">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+            </svg>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
