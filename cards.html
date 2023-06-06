@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cards.css">
+
+</head>
+
+<body>
+
+    <div class="estrutura">
+
+
+
+        <div class="card" id="meuElemento2">
+
+            <button onclick="toggleDisplay()" class="mudar-tamanho">
+
+                <div class="imgBx">
+                    <img src="imagens/pag2-img1.jpg" alt="" class="imagem">
+                </div>
+            </button>
+
+            <div class="details" id="meuElemento">
+                <p class="principal">Calabresa com Catupiry <span>Sabor clássico de Calabresa com mussarela, sendo a
+                        única com borda recheada com Catupiry</span> </p>
+
+                <h2 class="font">Preço</h2>
+
+                <p id="resultado1">escolha um tamanho</p>
+
+                <input class="buttons">Add ao Carrinho</input>
+
+            </div>
+
+            <div class="tamanho">
+
+                <p>Tamanhos</p>
+
+                <ul class="size">
+                    <li onclick="alterarValor(45, 'resultado1')"> G </li>
+                    <li onclick="alterarValor(35, 'resultado1')"> M </li>
+                    <li onclick="alterarValor(25, 'resultado1')"> P </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="card" id="meuElemento2">
+
+            <button onclick="toggleDisplay()" class="mudar-tamanho">
+
+                <div class="imgBx">
+                    <img src="imagens/pag2-img1.jpg" alt="" class="imagem">
+                </div>
+            </button>
+
+            <div class="details" id="meuElemento">
+                <p class="principal">Calabresa com Catupiry <span>Sabor clássico de Calabresa com mussarela, sendo a
+                        única com borda recheada com Catupiry</span> </p>
+
+                <h2 class="font">Preço</h2>
+
+                <p id="resultado1">escolha um tamanho</p>
+
+                <input class="buttons">Add ao Carrinho</input>
+
+            </div>
+
+            <div class="tamanho">
+
+                <p>Tamanhos</p>
+
+                <ul class="size">
+                    <li onclick="alterarValor(45, 'resultado1')"> G </li>
+                    <li onclick="alterarValor(35, 'resultado1')"> M </li>
+                    <li onclick="alterarValor(25, 'resultado1')"> P </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
